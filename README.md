@@ -49,3 +49,23 @@ The CSV is fetched from [Kaggle](https://www.kaggle.com/datasets/astrohl/russian
 - Shows `Showing X / Y`
 
 Filtering updates the GeoJSON source via `setData` so clusters reflect the filtered subset.
+
+## Deploy (Vercel)
+
+This project includes a `vercel.json` for zero-config hosting of the built Vite app and SPA routing.
+
+1. Ensure `VITE_MAPBOX_TOKEN` is set as an environment variable in your Vercel project (Dashboard → Settings → Environment Variables).
+2. Deploy via Vercel CLI or Dashboard.
+
+CLI quick start:
+
+```bash
+npm install
+npm run build
+# optional: npm i -g vercel
+vercel
+```
+
+Notes:
+- Build output is `dist` and SPA routes are rewritten to `/` per `vercel.json`.
+- Static assets from `public/` are bundled by Vite into `dist` on build.
