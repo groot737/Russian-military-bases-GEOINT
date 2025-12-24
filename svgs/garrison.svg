@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="10" fill="#2ECC71"/>
+
+  <!-- centered shield -->
+  <path d="M12 7
+           L17 9.5
+           V13.5
+           C17 16.5 14.7 18.7 12 19.5
+           C9.3 18.7 7 16.5 7 13.5
+           V9.5
+           L12 7Z"
+        fill="#FFFFFF"/>
+</svg>

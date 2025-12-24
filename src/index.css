@@ -1,0 +1,53 @@
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #eef2f7;
+  --panel: #ffffff;
+  --border: #d9e2ec;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #2563eb;
+  --accent-2: #0ea5e9;
+  --shadow: 0 12px 40px rgba(15, 23, 42, 0.14);
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Segoe UI Variable", "SF Pro Display", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 20%, #f1f5f9 0, #e2e8f0 40%, #e7ebf3 100%);
+}
+
+/* Shared surfaces */
+.glass { @apply backdrop-blur-lg bg-white/80 border border-white/50 shadow-xl; box-shadow: var(--shadow); }
+.sheet { @apply backdrop-blur-lg bg-white/90 border border-white/60 rounded-2xl shadow-xl; box-shadow: var(--shadow); }
+
+/* Controls */
+.btn {
+  @apply inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-transparent text-sm font-medium transition;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: white;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.18);
+}
+.btn-ghost { @apply inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-white/60 bg-white/70 text-sm font-medium; }
+.btn-quiet { @apply inline-flex items-center gap-2 px-2 py-1 rounded-md border border-transparent text-xs font-medium text-slate-600 hover:bg-slate-100; }
+
+/* Type dots + chips */
+.type-dot { @apply inline-block w-2.5 h-2.5 rounded-full mr-2 align-middle; }
+.chip { @apply inline-flex items-center px-2.5 py-1 text-xs rounded-full bg-slate-100 text-slate-700 border border-slate-200; }
+.pill { @apply inline-flex items-center px-3 py-1 text-xs rounded-full bg-slate-900 text-white; }
+
+/* Map container */
+.map-container { position: absolute; inset: 0; }
+.floating-card { @apply glass rounded-xl p-4 text-sm; }
+.legend { @apply floating-card flex flex-col gap-2; }
+.legend-row { @apply flex items-center gap-2 text-sm; }
+
+/* Focus ring for keyboard users */
+*,:focus-visible { outline: none; }
+*:focus-visible { box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.35); border-color: #2563eb !important; }

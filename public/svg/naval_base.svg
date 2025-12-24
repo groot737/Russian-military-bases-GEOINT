@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- background (NO STROKE) -->
+  <circle cx="12" cy="12" r="10" fill="#00A3A3" stroke="none"/>
+
+  <!-- anchor stem -->
+  <path d="M12 6v10"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        stroke-linecap="round"
+        fill="none"/>
+
+  <!-- anchor arms -->
+  <path d="M8 10c1.2 1 2.5 1.5 4 1.5S14.8 11 16 10"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        stroke-linecap="round"
+        fill="none"/>
+
+  <!-- cross bar -->
+  <path d="M9 16h6"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        stroke-linecap="round"
+        fill="none"/>
+
+  <!-- anchor tip -->
+  <path d="M12 16l-3 2h6l-3-2z"
+        fill="#FFFFFF"
+        stroke="none"/>
+</svg>
